@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Spirax' rel='stylesheet'>
+  <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <title>Questionnaire</title>
+  <style>
+    body {
+      background: url(images/games.jpg);
+    }
+
+    .question__title {
+      font-family: 'Spirax';
+      font-size: 22px;
+      color: navy;
+      background: peachpuff;
+      border: 1px solid green;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-weight: 700;
+    }
+
+    #pl1,
+    h3 {
+      font-family: 'Allerta';
+      font-size: 22px;
+      font-size: 14px;
+      text-align: center;
+      width: 800px;
+      height: 28px;
+      background: linear-gradient(to right, palegreen, aquamarine, skyblue);
+      color: black;
+      border: 2px solid red;
+      border-radius: 4%;
+      margin: 1px;
+    }
+
+    #pl1 {
+      font-weight: bold;
+      position: absolute;
+      top: 47px;
+      left: 330px;
+    }
+
+    h3 {
+      position: absolute;
+      top: 87px;
+      left: 330px;
+      text-align: center;
+    }
+
+    #formsI {
+      font-family: 'Allerta';
+      font-size: 15px;
+      position: absolute;
+      top: 120px;
+      left: 480px;
+      width: 500px;
+      height: 480px;
+      background: linear-gradient(to right, palevioletred, lightseagreen, thistle, lightyellow, lightsalmon, plum, lightcoral);
+      border: 3px solid navy;
+    }
+
+    #btn1 {
+      position: absolute;
+      top: 320px;
+      left: 184px;
+      border: 2px solid green;
+      border-radius: 20%;
+      background-color: lightcoral;
+      padding: 5px;
+    }
+
+    #btn2 {
+      position: absolute;
+      top: 370px;
+      left: 190px;
+      border: 2px solid green;
+      border-radius: 20%;
+      background-color: palegreen;
+      padding: 5px;
+    }
+
+    #btn3 {
+      position: absolute;
+      top: 420px;
+      left: 190px;
+      border: 2px solid green;
+      border-radius: 20%;
+      background-color: deepskyblue;
+      padding: 5px;
+    }
+
+    #a1 {
+      position: absolute;
+      top: 5px;
+      left: 4px;
+    }
+
+    #a2 {
+      position: absolute;
+      top: 65px;
+      left: 4px;
+    }
+
+    #a3 {
+      position: absolute;
+      top: 125px;
+      left: 4px;
+    }
+
+    #a4 {
+      position: absolute;
+      top: 185px;
+      left: 4px;
+    }
+
+    #a5 {
+      position: absolute;
+      top: 245px;
+      left: 4px;
+    }
+
+    #scoresT {
+      font-family: 'Allerta';
+      font-size: 15px;
+      position: absolute;
+      top: 603px;
+      left: 480px;
+      width: 500px;
+      height: 140px;
+      background: linear-gradient(to right, lightseagreen, lightyellow, lightsalmon, lightcoral);
+      border: 3px solid navy;
+    }
+
+    h2 {
+      color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top">
+    <div class="question__title">Author &nbsp : &nbsp Johan Swan &nbsp - &nbsp Test Your General Knowledge - 15 Questions</div>
+  </div>
+
+  <div class="bottom">
+    <div class="question__container"><br>
+      <input id="pl1" type="text" class="question__asked" readonly placeholder=""><br>
+      <div>
+        <h3 id="stellie"></h3> <br><br>
+        <div id="formsI">
+          <form id="inputF">
+            <input id="i1" type="radio" name="answers" value="1"><br>
+            <p id="a1"></p><br><br>
+            <input id="i2" type="radio" name="answers" value="2"><br>
+            <p id="a2"></p><br><br>
+            <input id="i3" type="radio" name="answers" value="3"><br>
+            <p id="a3"></p><br><br>
+            <input id="i4" type="radio" name="answers" value="4"><br>
+            <p id="a4"></p><br><br>
+            <input id="i5" type="radio" name="answers" value="5"><br>
+            <p id="a5"></p><br><br>
+            <input type="button" id="btn1" value="Click for Question" onclick="nextQuestion()">
+            <input type="button" id="btn2" value="Confirm Answer">
+            <input type="button" id="btn3" value="Start New Game" onclick="initialize()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="scoresT">
+    <h4 id="scoreAnn"></h4>
+    <h4 id="currentSc"></h4>
+    <h4 id="newGame"></h4>
+  </div>
+
+  <h2 id="h2scoreI"></h2>
+
+  <script src="questionnaire.js"></script>
+</body>
+
+</html>
