@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Goldman', cursive;
+  margin-bottom: 10px;
+}
+
+#quote-box {
+  border-radius: 3px;
+  position: relative;
+  width: 450px;
+  padding: 40px 50px;
+  display: table;
+  background-color: #000;
+  border: 8px solid #FFF;
+}
+
+#quote-box .qTxt {
+  clear: both;
+  font-family: 'Geo', sans-serif;
+  font-size: 33px;
+  color: #000;
+  width: 700px;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+#quote-box .qTxt i {
+  font-size: 16px;
+  margin-right: 18px
+}
+
+#quote-box .qAuth {
+  font-family: 'Smokum', cursive;
+  font-size: 29px;
+  letter-spacing: 3px;
+  width: 800px;
+  height: auto;
+  padding-top: 20px;
+  text-align: right;
+}
+
+#quote-box .buttons {
+  width: 900px;
+  margin: auto;
+  display: block;
+}
+
+.button {
+  height: 55px;
+  color: #FFF;
+  background-color: #333;
+  outline: none;
+  font-size: 0.85em;
+  border: 2px solid #FFF;
+  border-radius: 15%;
+  padding: 12px;
+  margin-top: 30px;
+}
+
+#new-quote {
+  float: right;
+}
