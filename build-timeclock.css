@@ -1,0 +1,15 @@
+    body {
+      background: linear-gradient(to right, #a8ff78, #78ffd6);
+    }
+
+    #timer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(to bottom, brown, saddlebrown, chocolate);
+      border: 24px solid olive;
+      border-radius: 60%;
+      border-style: double;
+      padding: 3px;
+    }
