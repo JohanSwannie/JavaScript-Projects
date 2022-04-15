@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(270deg, purple, olive, lime, peachpuff, skyblue, crimson);
+}
+
+.headings {
+  text-align: center;
+}
+
+.underliners {
+  text-decoration: underline;
+}
+
+.underliners:nth-child(1) {
+  color: navy;
+  font-size: 42px;
+}
+
+.underliners:nth-child(2) {
+  color: red;
+  font-size: 37px;
+}
+
+.underliners:nth-child(3) {
+  color: green;
+  font-size: 32px;
+}
+
+.boxes {
+  border: 7px solid purple;
+  border-style: double;
+  background: lime;
+  margin-top: 35px;
+}
