@@ -1,0 +1,51 @@
+let bd = document.getElementById('bdy');
+let df1 = document.createElement('div');
+df1.setAttribute("class", "container-fluid");
+bd.appendChild(df1);
+let df2 = document.createElement('div');
+df2.setAttribute("class", "row");
+df1.appendChild(df2);
+let df3 = document.createElement('div');
+df3.setAttribute("class", "col-md-12 headings");
+df2.appendChild(df3);
+let hdy1 = document.createElement('H1');
+df3.appendChild(hdy1);
+let hdy2 = document.createElement('H1');
+df3.appendChild(hdy2);
+let hdy3 = document.createElement('H1');
+df3.appendChild(hdy3);
+let txt1 = document.createTextNode("Creating HTML Elements via JavaScript");
+hdy1.appendChild(txt1);
+let txt2 = document.createTextNode("This is a good exerice");
+hdy2.appendChild(txt2);
+let txt3 = document.createTextNode("and will broaden your JavaScript knowledge");
+hdy3.appendChild(txt3);
+let df3b = document.createElement('div');
+df3b.setAttribute("class", "col-md-4 boxes");
+df2.appendChild(df3b);
+let para1 = document.createElement('p');
+df3b.appendChild(para1);
+let ptxt1 = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quaerat ex, excepturi asperiores distinctio, adipisci soluta, maiores voluptate pariatur corporis fugiat reprehenderit necessitatibus! Officia tempora, architecto facilis similique ad. Esse.");
+para1.appendChild(ptxt1);
+let df3c = document.createElement('div');
+df3c.setAttribute("class", "col-md-4 boxes");
+df2.appendChild(df3c);
+let para2 = document.createElement('p');
+df3c.appendChild(para2);
+let ptxt2 = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quaerat ex, excepturi asperiores distinctio, adipisci soluta, maiores voluptate pariatur corporis fugiat reprehenderit necessitatibus! Officia tempora, architecto facilis similique ad. Esse.");
+para2.appendChild(ptxt2);
+let df3d = document.createElement('div');
+df3d.setAttribute("class", "col-md-4 boxes");
+df2.appendChild(df3d);
+let para3 = document.createElement('p');
+df3d.appendChild(para3);
+let ptxt3 = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quaerat ex, excepturi asperiores distinctio, adipisci soluta, maiores voluptate pariatur corporis fugiat reprehenderit necessitatibus! Officia tempora, architecto facilis similique ad. Esse.");
+para3.appendChild(ptxt3);
+
+document.querySelectorAll('H1').forEach(item => {
+  item.setAttribute("class", "underliners");
+});
+
+document.querySelectorAll('p').forEach(item => {
+  item.setAttribute("style", "padding: 35px");
+});
