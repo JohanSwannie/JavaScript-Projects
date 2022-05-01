@@ -1,5 +1,4 @@
 // Array Constructor with keyword Array
-
 let staffMembers = new Array(10);                         // 10 items undefined staff members array
 let groceryList = new Array('sugar', 'blueberries');     // 2 items defined groceries
 console.log('groceryList = ', groceryList);
@@ -10,9 +9,10 @@ let golfScores = [71, 69, 74, 78, 70, 67, 72];          // 7 items defined golf 
 console.log('golfScores = ', golfScores);
 
 // Array Constructor with the from keyword
-
-let scoreDecreaser = Array.from((golfScores), a => a - 3);
+let scoreDecreaser = Array.from(golfScores, a => a - 3);
 console.log('scoreDecreaser = ', scoreDecreaser);
+let scoreDecreaser2 = golfScores.reduce((a, b) => a + b, 0);
+console.log('scoreDecreaser2 = ', scoreDecreaser2);
 
 // Array Constructor with the of keyword
 
@@ -62,6 +62,26 @@ for (let key of itemsKey) {
   console.log(`The current key is ${key}`);
 }
 
+let items2K = [
+  { name: 'Jannie',
+    age: 23
+  },
+  { name: 'Peter',
+    age: 27
+  }
+];
+
+for (var i = 0; i < items2K.length; i++) {
+  console.log(`the name of the person is ${items2K[i].name}`);
+  console.log(`the age of the person is ${items2K[i].age}`);
+}
+
+console.log(items2K[0].name);
+let items2Key = items2K.keys();
+for (let key of items2Key) {
+  console.log(`The current key2 is ${key}`);
+}
+
 // Iterate through an array to determine the values
 
 let gasesList = ['air', 'helium', 'nitrogen', 'freon', 'hydrogen', 'propane', 'oxygen'];
@@ -73,8 +93,9 @@ for (let item of gasesListValues) {
 // Iterate through the values by using the forEach method
 
 let weatherFigures = [19, 11, 21, 18, 25, 16, 12, 10, 14, 26, 22];
-weatherFigures.forEach(item => console.log('weather items are ', item));
-
+let cntr99 = 0;
+weatherFigures.forEach(item => (console.log('weather item is ', item), cntr99 ++));
+console.log(`Johannes, die counter is nou ${cntr99}`);
 // Iterate through the values of an array by using the for of
 
 let lettersA = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
@@ -82,7 +103,7 @@ let lettersA = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 let concatterB = '';
 let cntr = 0;
 for (var item of lettersA) {
-    if (cntr === 5 && cntr < 20) {
+    if (cntr === 5) {
       concatterB += ',';
       cntr = 0;
     }
@@ -130,26 +151,27 @@ console.log(`The sorted values for dataEntriesB is now ${dataEntriesB.sort()}`);
 let employeeDetails = [
   { name: 'Billy Brown',
     position: 'Network Specialist',
-    age: 33
+    ages: [33, [[52, 14], 20]]
   },
   { name: 'Gilliam Devonport',
     position: 'Fron-End Developer',
-    age: 27
+    ages: [27, [[18, 31], 15]]
   },
   { name: 'Lucy Malone',
     position: 'Receptionist',
-    age: 24
+    ages: [24, [[29, 17], 23]]
   },
   { name: 'John Chapman',
     position: 'CEO',
-    age: 54
+    ages: [54, [[33, 41], 45]]
   }
 ];
 
-console.log(`Names of Employees are ${employeeDetails.map(person => person.name)}`);
+console.log(`Names and Ages of Employees are ${employeeDetails.map(person => `${person.name} is ${person.ages[1][0][0]} years old `)}`);
 
 let mathExamPoints = [22, 19, 16, 15, 21, 24, 18];
 console.log(`The test of 25 points results in the follwing percentages ${mathExamPoints.map(point => (point * 4))}`);
+console.log(`The array change now with only values with certain modulus criteria applies ${mathExamPoints.map(point => point % 2 === 0 ? point + 1: point -1)}`);
 
 // Use toLocaleString to return a string that represents the elements of an array
 
@@ -167,6 +189,9 @@ console.log(`The Liquid String is ${liquidString}`);
 
 let colorArray = ['red', 'darkgreen', 'palegreen', 'orange', 'yellow', 'crimson', 'navy'];
 console.log('Is the color yellow included in the array? - ', colorArray.includes('yellow'));
+if (colorArray.includes('crimson')) {
+  console.log('Absolutely is crimson part of the array colorArray');
+}
 
 // Find a specific first item as a result of of a query in an array
 
@@ -196,7 +221,8 @@ console.log('The shirt with a value of 79.99 is at index ', indexLocation);
 // Use indexOf to determine at what index a specific item is
 
 let itemsX = [12, 10, 29, 21, 17, 33, 14, 11, 20, 36, 3, 26, 40];
-console.log(`The number 11 is at index ${itemsX.indexOf(11)}`);
+let itemToFind = 11;
+console.log(`Johannes, the number 11 is at index ${itemsX.indexOf(itemToFind)}`);
 
 // Use lastIndexOf to determine at what last index a specific item is
 
@@ -206,9 +232,11 @@ console.log(`The last Jersey in the list is at index ${listOfItems.lastIndexOf('
 
 // Use at to find the value of an item at a certain index
 
-let indexNumber = 5;
-console.log(`By using an index of ${indexNumber}, we find the value of ${shirtValues.at(indexNumber)}`);
-
+let indexN = 0;
+for (var i = 0; i < shirtValues.length; i++) {
+  console.log(`By using an index of ${indexN}, we find the value of ${shirtValues.at(indexN)}`);
+  indexN ++;
+}
 // Joining elements in an array together in certain ways
 
 let elementsJ = ['Dining Table', 'Office Chair', 'Coffee Table', 'Sofa'];
@@ -241,8 +269,10 @@ console.log(`Profits for the month of April 2022 is ${profitsApril.reduce((prevV
 // (from right-to-left) to reduce it to a single value.
 
 let totalList = [[19, 3], [15, 10], [17, 20], [8, 5]];
-let newList = totalList.reduceRight((accumulator, currVal) => accumulator.concat(currVal));
-console.log(newList);
+let newList1 = totalList.reduceRight((accumulator, currVal) => accumulator + currVal, 0);
+let newList2 = totalList.reduceRight((accumulator, currVal) => accumulator.concat(currVal));
+console.log(newList1);
+console.log(newList2);
 
 // Reversing an array
 
@@ -283,3 +313,29 @@ largeArray2.splice(2, 0, 'Go'); // inserted an item at index 2
 console.log('New values in large Array2 is now ', largeArray2);
 largeArray3.splice(4, 3, 'Dc'); // replace 3 elements at index 4('Ke', 'Mq', 'Yz') with new item 'Dc'
 console.log('New values in large Array3 is now ', largeArray3);
+
+
+//Looping through objects
+
+const object = {a: 1, b: 2, c: 3};
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+Object.entries(object).forEach(
+    ([key, value]) => console.log(`The key is ${key} and the value is ${value}`));
+
+// Array Destructuring
+
+let [One, Two, Three] = ['first', 'second', 'third'];
+console.log(`The value at the variable called Two, will be '${Two}'`);
+
+let [, , , , , , seven] = ['Peter', 'Jane', 'Dorothy', 'Zack', 'Joe', 'Mary', 'Luke'];
+console.log(`The 7th item in the list is '${seven}'`);
+
+let [, , three, , five, six, , , nine] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(`The third item in the list is ${three}`);
+console.log(`The fifth item in the list is ${five}`);
+console.log(`The sixth item in the list is ${six}`);
+console.log(`The nineth item in the list is ${nine}`);
