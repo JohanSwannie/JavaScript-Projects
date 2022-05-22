@@ -1,0 +1,32 @@
+[
+  {
+    "id": 100,
+    "firstName": "Johan",
+    "lastName": "Swan",
+    "jobDescription": "Front-end Developer"
+  },
+  {
+    "id": 107,
+    "firstName": "Richard",
+    "lastName": "Swan",
+    "jobDescription": "Executive Chef"
+  },
+  {
+    "id": 109,
+    "firstName": "Julie",
+    "lastName": "Swan",
+    "jobDescription": "Professional Artist"
+ },
+  {
+    "id": 101,
+    "firstName": "Chris",
+    "lastName": "Smit",
+    "jobDescription": "Army Officer"
+ },
+  {
+    "id": 102,
+    "firstName": "Frikkie",
+    "lastName": "Smit",
+    "jobDescription": "Stage Artist"
+  }
+]
