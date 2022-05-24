@@ -23,7 +23,7 @@ function translatePigLatin(str) {
     arr.push(buildW)
   }
   str = arr.join('')
-  return str;
+  return str;  
 }
 
 console.log(translatePigLatin("crwqonsonant"));
