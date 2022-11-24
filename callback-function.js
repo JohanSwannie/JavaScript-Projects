@@ -17,6 +17,6 @@ const diffy = document.querySelector('.container');
 
 for (var i = 0; i < endResult.length; i++) {
   const puffy = document.createElement('p');
-  puffy.innerHTML = `Result ${i+1} : ${endResult[i]}`;
+  puffy.innerHTML = `Day ${i+1} : ${endResult[i]}`;
   diffy.appendChild(puffy);
 }
