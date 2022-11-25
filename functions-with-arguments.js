@@ -7,11 +7,11 @@ const getAverageAge = function() {
   for (var i = 0; i < arguments.length; i++) {
     for (var value in arguments[i]) {
       if (arguments[i].hasOwnProperty(value)) {
-        bornDate = currentYear - ((arguments[i])[value]);
+        bornDate = currentYear - arguments[i][value];
         const pippie = document.createElement('p');
-        pippie.innerHTML = `${value} is ${((arguments[i])[value])} years old and was born in ${bornDate}`;
+        pippie.innerHTML = `${value} is ${arguments[i][value]} years old and was born in ${bornDate}`;
         pappie.appendChild(pippie);
-        array1.push(`${((arguments[i])[value])}`)
+        array1.push(`${arguments[i][value]}`)
       }
       bornDate = 0;
     }
@@ -19,7 +19,7 @@ const getAverageAge = function() {
   let allAges = 0;
   let averageAges = 0;
   for (var i = 0; i < array1.length; i++) {
-    allAges = allAges + parseInt(array1[i]);
+    allAges += parseInt(array1[i]);
   }
   averageAges = allAges / arguments.length;
   const pippie2 = document.createElement('p');
