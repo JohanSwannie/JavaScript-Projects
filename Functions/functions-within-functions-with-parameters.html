@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Use Rest Operators in Functions</title>
+  <style>
+    body {
+      color: white;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border: 1.6rem solid #FFF;
+      border-style: double;
+      outline: 2rem solid #72AA72;
+      outline-style: double;
+      padding: 1rem;
+    }
+
+    .lottoNumbers {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: .1rem;
+    }
+
+    h4 {
+      width: 3rem;
+      height: 3rem;
+      background: crimson;
+      color: #FFF;
+      font-weight: bold;
+      padding: .1rem;
+    }
+
+    p {
+      color: #FFF;
+      font-size: 21px;
+      width: 40rem;
+      padding: .7rem;
+      border: 8px solid #F5F5F5;
+      border-style: double;
+    }
+
+    #lotter,
+    #completter,
+    #resetter {
+      width: 10rem;
+      height: 4rem;
+      line-height: 3;
+      background: crimson;
+      color: #FFF;
+      border: 2px solid #FFF;
+      padding: .3rem;
+      margin-bottom: .5rem;
+    }
+  </style>
+</head>
+
+<body style="background-color: navy;">
+  <button id="lotter">Lotto Number</button><br>
+  <button id="completter">Show Lotto Numbers</button><br>
+  <button id="resetter">Start Again</button>
+  <div class="container">
+    <div class="lottoNumbers">
+    </div>
+  </div>
+</body>
+
+</html>
