@@ -6,3 +6,4 @@ function alphabeticalOrder(arr) {
 }
 
 console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
+
