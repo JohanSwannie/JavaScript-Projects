@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test for tables in the form of buttons</title>
+  <style>
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box:after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    .box button {
+      float: left;
+      background: skyblue;
+      color: #FFF;
+      font-weight: bold;
+      width: 5.5rem;
+      height: 5.5rem;
+      border: 8px solid black;
+      border-style: double;
+      line-height: 5;
+      text-align: center;
+      padding: 0;
+    }
+
+    .box button:hover {
+      background: linear-gradient(to right, crimson, olive, rebeccapurple, olive);
+      color: #000;
+      font-weight: bold;
+    }
+
+    #butter {
+      width: 20rem;
+      height: 7rem;
+      line-height: 3;
+      background: darkcyan;
+      color: #FFF;
+      font-weight: bold;
+      border: 8px solid #000;
+      border-style: double;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+    </div>
+    <div class="box">
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+    </div>
+    <div class="box">
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+    </div>
+    <div class="box">
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+    </div>
+    <div class="box">
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+      <button class="butty"></button>
+    </div>
+  </div>
+
+  <button id="butter" onclick="reloadApp()"">Reload the Application</button>
+
+
+</body>
