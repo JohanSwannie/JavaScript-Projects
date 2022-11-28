@@ -1,13 +1,11 @@
 const moneyInBank = (newAmount) =>
   ((newBalance) => {
       const pippie1 = document.createElement('p');
-      pippie1.setAttribute('id', 'pippie1');
       pippie1.innerHTML = `Your new bank balance is now ${newBalance} dollars`;
       pappie.appendChild(pippie1);
       let bankAmount = newBalance;
       const withdrawMessage = () => {
         const pippie2 = document.createElement('p');
-        pippie2.setAttribute('id', 'pippie2');
         pippie2.innerHTML = `You can now withdraw some of your money`;
         pappie.appendChild(pippie2);
       };
