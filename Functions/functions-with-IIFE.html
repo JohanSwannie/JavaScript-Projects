@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Immediate Invoke Function Execution</title>
+  <title>Immediate Invokes Function Execution</title>
   <style>
 
     .container2 {
@@ -66,7 +66,11 @@
 
     ::placeholder {
       color: #000;
-      opacity: .35;
+      opacity: .25;
+    }
+
+    input {
+      cursor: crosshair;
     }
 
     input::-webkit-outer-spin-button,
@@ -93,8 +97,8 @@
   <div class="container1">
     <form id="bankForm" action="#" onsubmit="handleYourMoney()">
       <div class="inputControl">
-        <input id="inputAmount" type="number" autofocus style="color: #000;" placeholder="Initial Deposit to Bank" />
-        <input id="drawnAmount" type="number" autofocus style="color: #000;" placeholder="Withdraw Amount" />
+        <input id="inputAmount" type="number" autofocus style="color: #000;" placeholder="Enter Initial Deposit to Bank" />
+        <input id="drawnAmount" type="number" autofocus style="color: #000;" placeholder="Enter Withdraw Amount" />
         <input id="buttercup1" type="button" value="Confirm Withdrawn Amount" style="color: #FFF;" />
         <input id="depositAmount" type="number" autofocus style="color: #000;" placeholder="Deposit More Money" />
         <input id="buttercup2" type="button" value="Confirm Deposit Amount" style="color: #FFF;" />
@@ -110,5 +114,7 @@
     <p id='errorMsg'></p>
   </div>
 </body>
+
+<script src="functions13.js"></script>
 
 </html>
