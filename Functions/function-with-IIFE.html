@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Immediate Invoke Function Execution</title>
+  <style>
+
+    .container2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+
+    p {
+      background: crimson;
+      color: #FFF;
+      font-size: 18px;
+      width: 40rem;
+      padding: .7rem;
+      border: 8px solid #F5F5F5;
+      border-style: double;
+    }
+
+    .inputControl {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    #inputAmount,
+    #drawnAmount,
+    #depositAmount,
+    #submitter,
+    #buttercup1,
+    #buttercup2,
+    #buttercup3 {
+      width: 15rem;
+      height: 3rem;
+      line-height: 2;
+      text-align: center;
+      background: red;
+      font-weight: bold;
+    }
+
+    #inputAmount,
+    #drawnAmount,
+    #depositAmount {
+      background: lightyellow;
+    }
+
+    #submitter,
+    #buttercup1,
+    #buttercup2,
+    #buttercup3 {
+      height: 3.4rem;
+    }
+
+    #drawnAmount,
+    #depositAmount,
+    #buttercup1,
+    #buttercup2 {
+      display: none;
+    }
+
+    ::placeholder {
+      color: #000;
+      opacity: .35;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    #errorMsg {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+  </style>
+</head>
+
+<body style="background: lightblue">
+  <div class="container1">
+    <form id="bankForm" action="#" onsubmit="handleYourMoney()">
+      <div class="inputControl">
+        <input id="inputAmount" type="number" autofocus style="color: #000;" placeholder="Initial Deposit to Bank" />
+        <input id="drawnAmount" type="number" autofocus style="color: #000;" placeholder="Withdraw Amount" />
+        <input id="buttercup1" type="button" value="Confirm Withdrawn Amount" style="color: #FFF;" />
+        <input id="depositAmount" type="number" autofocus style="color: #000;" placeholder="Deposit More Money" />
+        <input id="buttercup2" type="button" value="Confirm Deposit Amount" style="color: #FFF;" />
+        <input id="submitter" type="submit" value="Confirm Banked Amount" style="color: #FFF;" />
+        <input id="buttercup3" type="button" value="Start All Over" style="color: #FFF;" onclick="startAllOver()" />
+      </div>
+    </form>
+  </div>
+  <div class="container2">
+
+  </div>
+  <div class="container3">
+    <p id='errorMsg'></p>
+  </div>
+</body>
+
+</html>
