@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create HTML Elements Exercise 1</title>
+  <style>
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+
+    p {
+      background: crimson;
+      color: #FFF;
+      font-size: 18px;
+      width: 40rem;
+      padding: .7rem;
+      border: 8px solid #F5F5F5;
+      border-style: double;
+    }
+
+    button {
+      width: 20rem;
+      height: 3rem;
+      background: navy;
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    .class1 {
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body style="background: lightblue">
+  <div class="container">
+  </div>
+  <button onclick="toggleClass()">Click To Toggle Class</button>
+  <button onclick="removeClass()">Click To Remove Class</button>
+  <button onclick="removeElement()">Click To Remove Element</button>
+  <button onclick="startAllOver()">Click To Start All Over</button>
+</body>
+
+<script src="create-elements1.js"></script>
+
+</html>
