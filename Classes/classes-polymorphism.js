@@ -6,15 +6,18 @@
     }
 
     personOne() {
-      document.write(`${this.person1} only likes ${this.person2} </br>`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>${this.person1} only likes ${this.person2} </span> </br>`);
     }
 
     personTwo() {
-      document.write(`${this.person2} only likes ${this.person1} </br>`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>${this.person2} only likes ${this.person1} </span> </br>`);
     }
 
     personThree() {
-      document.write(`${this.person3} only likes ${this.person2} </br>`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>${this.person3} only likes ${this.person2} </span> </br>`);
     }
   }
 
@@ -25,13 +28,19 @@
     }
 
     personThree() {
-      document.write(`${this.person4} has reported that ${this.person3} likes ${this.person1} as well, inspite of the fact that ${this.person1} only likes ${this.person2} </br>`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>${this.person4} has reported that ${this.person3} likes
+      ${this.person1} as well, inspite of the fact that ${this.person1}
+      only likes ${this.person2} </span> </br>`);
     }
 
     personTwo() {
       super.personTwo();
-      document.write(`BUT A HUGE CHANGE IN ATTITUDE HAS OCCURED </br>`);
-      document.write(`Although ${this.person2} only liked ${this.person1} before, she also now likes ${this.person3}`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>BUT A HUGE CHANGE IN ATTITUDE HAS OCCURED </span> </br>`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>Although ${this.person2} only liked ${this.person1} before,
+      she also now likes ${this.person3} </span>`);
     }
   }
 
