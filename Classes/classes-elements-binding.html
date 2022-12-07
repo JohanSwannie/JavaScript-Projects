@@ -5,18 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Classes Exercise 5 - HTML List Bindings</title>
+  <style>
+
+    body {
+      background: olive;
+    }
+
+    .container {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    button {
+      width: 10rem;
+      height: 5rem;
+      background: navy;
+      color: #FFF;
+      font-weight: bold;
+      border: 3px solid #F3F3F3;
+    }
+
+    input[type=text] {
+      width: 10rem;
+      height: 4rem;
+      background: #F1F1F1;
+      color: #000;
+      font-weight: bold;
+    }
+
+    ::placeholder {
+      color: red;
+      opacity: 0.5;
+    }
+
+  </style>
 </head>
 <body>
-  <h2 style="text-align: center; text-decoration: underline">Classes with HTML Bindings of Elements/tags</h2>
-  <ul id="list">
-    <li>description1</li>
-    <li>description2</li>
-    <li>description3</li>
-    <li>description4</li>
-    <li>description5</li>
-    <li>description6</li>
-    <li>description7</li>
-    <li>description8</li>
-  </ul>
+    <h2 style="text-align: center; text-decoration: underline">Classes with HTML Bindings of Elements/tags</h2>
+  <div class="container">
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+    <input id="addValue" type="text" placeholder="Input - Add Value" autofocus>
+    <input id="removeValue" type="text" placeholder="Input - Remove Value" autofocus>
+    <ul id="list">
+      <li>description1</li>
+      <li>description2</li>
+      <li>description3</li>
+      <li>description4</li>
+      <li>description5</li>
+      <li>description6</li>
+      <li>description7</li>
+      <li>description8</li>
+    </ul>
+  </div>
 </body>
+
 </html>
