@@ -16,7 +16,7 @@
   let box1 = new Box(12);
   for (var value in box1) {
     if (box1.hasOwnProperty(value)) {
-      document.write(`${value} : ${box1[value]}  &nbsp  &nbsp </br>`);
+      document.write(`${value} : ${box1[value]} </br>`);
     }
   }
 
