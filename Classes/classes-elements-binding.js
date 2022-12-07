@@ -11,12 +11,6 @@ class ElementsBinding {
     return liTag;
   };
 
-  removeInitialTags() {
-    while (this.listTag.firstChild) {
-      this.listTag.removeChild(this.listTag.firstChild);
-    }
-  };
-
   updateTags() {
     while (this.listTag.firstChild) {
       this.listTag.removeChild(this.listTag.firstChild);
@@ -56,24 +50,20 @@ const nameArray = ['Julian', 'Peter', 'Paul', 'Barry', 'Luke', 'Andrew',
                 'Dianne', 'Pollos', 'Carl', 'Nancy', 'Oswald', 'Oscar',
                 'Andreas', 'Dalene', 'Suzanne', 'Roy', 'Mike', 'Libby'];
 
-const initialTagBinding = new ElementsBinding(listing, undefined);
+const performTagBinding = new ElementsBinding(listing, nameArray);
 
-initialTagBinding.removeInitialTags();
-
-const extraTagBinding = new ElementsBinding(listing, nameArray);
-
-extraTagBinding.addTags();
+performTagBinding.addTags();
 
 const addInputValue = document.getElementById('addValue');
 
 function addItem() {
-  extraTagBinding.addTags(addInputValue.value);
+  performTagBinding.addTags(addInputValue.value);
   addInputValue.value = '';
 }
 
 const removeInputValue = document.getElementById('removeValue');
 
 function removeItem() {
-  extraTagBinding.removeTags(removeInputValue.value);
+  performTagBinding.removeTags(removeInputValue.value);
   removeInputValue.value = '';
 }
