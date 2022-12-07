@@ -19,6 +19,10 @@ class ElementsBinding {
   }
 
   updateTags() {
+     while (this.listTag.firstChild) {
+      this.listTag.removeChild(this.listTag.firstChild);
+    }
+
     for (let description of this.listDescr) {
       this.listTag.appendChild(ElementsBinding.createTag(description));
     }
@@ -30,8 +34,8 @@ class ElementsBinding {
   }
 
   removeTags(idx) {
-    alert(`Tag to be removed is ${this.listDescr[idx]}`)
     this.listDescr.splice(idx, 1);
+    this.updateTags();
   }
 
 }
@@ -50,4 +54,4 @@ const extraTagBinding = new ElementsBinding(listing, nameArray);
 
 extraTagBinding.addTags();
 
-extraTagBinding.removeTags(Math.floor(Math.random() * nameArray.length) + 1);
+extraTagBinding.removeTags(7);
