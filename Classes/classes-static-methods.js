@@ -16,9 +16,12 @@
   let box1 = new Box(12);
   for (var value in box1) {
     if (box1.hasOwnProperty(value)) {
-      document.write(`${value} : ${box1[value]} </br>`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>${value} : ${box1[value]} </span> </br>`);
     }
   }
 
-  document.write(`${Box.test1(14, 14)} </br>`);
-  document.write(`${Box.test2(13, 13)}`);
+  document.write(`<span style='font-family: "Trirong", serif; color:
+  #FFF'>${Box.test1(14, 14)} </span>  </br>`);
+  document.write(`<span style='font-family: "Trirong", serif; color:
+  #FFF'>${Box.test2(13, 13)} </span>`);
