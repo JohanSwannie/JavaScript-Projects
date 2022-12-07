@@ -9,6 +9,7 @@ class ElementsBinding {
   static createTag(description) {
     const liTag = document.createElement('li');
     liTag.textContent = description;
+    liTag.style.color = '#FFF';
     return liTag;
   }
 
@@ -19,7 +20,7 @@ class ElementsBinding {
   }
 
   updateTags() {
-     while (this.listTag.firstChild) {
+    while (this.listTag.firstChild) {
       this.listTag.removeChild(this.listTag.firstChild);
     }
 
@@ -28,14 +29,20 @@ class ElementsBinding {
     }
   }
 
-  addTags(textContent) {
-    this.listDescr.push(textContent);
-    this.updateTags();
+  addTags(addTextContent) {
+    const IDX1 = this.listDescr.indexOf(addTextContent);
+    if (IDX1 === -1) {
+      this.listDescr.push(addTextContent);
+      this.updateTags();
+    }
   }
 
-  removeTags(idx) {
-    this.listDescr.splice(idx, 1);
-    this.updateTags();
+  removeTags(removeTextContent) {
+    const IDX2 = this.listDescr.indexOf(removeTextContent);
+    if (IDX2 > -1) {
+      this.listDescr.splice(IDX2, 1);
+      this.updateTags();
+    }
   }
 
 }
@@ -54,4 +61,16 @@ const extraTagBinding = new ElementsBinding(listing, nameArray);
 
 extraTagBinding.addTags();
 
-extraTagBinding.removeTags(7);
+const addInputValue = document.getElementById('addValue');
+
+function addItem() {
+  extraTagBinding.addTags(addInputValue.value);
+  addInputValue.value = '';
+}
+
+const removeInputValue = document.getElementById('removeValue');
+
+function removeItem() {
+  extraTagBinding.removeTags(removeInputValue.value);
+  removeInputValue.value = '';
+}
