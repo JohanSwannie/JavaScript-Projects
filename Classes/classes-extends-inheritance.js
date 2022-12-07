@@ -1,4 +1,4 @@
-    class Person {
+      class Person {
     constructor(_name, _surname, _age, _hobby) {
       this.name = _name;
       this.surname = _surname;
@@ -7,7 +7,9 @@
     }
 
     message() {
-      document.write(`<span style='font-family: "Trirong", serif; color: #FFF'>The name of the person is ${this.name} ${this.surname} of age ${this.age} and he/she likes ${this.hobby}</span> </br> </br>`);
+      document.write(`<span style='font-family: "Trirong", serif; color:
+      #FFF'>The name of the person is ${this.name} ${this.surname} of age
+      ${this.age} and he/she likes ${this.hobby}</span> </br> </br>`);
     }
   }
 
@@ -19,7 +21,11 @@
     }
 
     careerPersonDescription() {
-      document.write(`<span style='font-family: "Trirong", serif; color: #FFF'>Career Person ${this.name} ${this.surname} is ${this.age} old, with a hobby of ${this.hobby}, in a job of ${this.jobDescription} for ${parseFloat((this.monthsInJob / 12).toFixed(1))} years.</span> </br> </br>`)
+      document.write(`<span style='font-family: "Trirong", serif;
+      color: #FFF'>Career Person ${this.name} ${this.surname} is
+      ${this.age} old, with a hobby of ${this.hobby}, in a job of
+      ${this.jobDescription} for ${parseFloat((this.monthsInJob / 12).toFixed(1))}
+      years.</span> </br> </br>`)
     }
   }
 
