@@ -21,7 +21,14 @@
 
   const rect1 = new Rectangle(5, 3, 'skyblue');
   const rect2 = new Rectangle(9, 4, 'darkgreen');
-  document.write(`${rect1.getRectangleArea()} </br>`);
-  document.write(`${rect2.getRectangleArea()} </br>`);
+
+  document.write(`<span style='font-family: "Trirong", serif; color:
+  #FFF'>${rect1.getRectangleArea()} </span> </br>`);
+
+  document.write(`<span style='font-family: "Trirong", serif; color:
+  #FFF'>${rect2.getRectangleArea()} </span> </br>`);
+
   rect1.anotherObject = 30;
-  document.write(`${rect1.theAreas}`);
+
+  document.write(`<span style='font-family: "Trirong", serif; color:
+  #FFF'>${rect1.theAreas} </span>`);
