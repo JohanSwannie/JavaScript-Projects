@@ -3,33 +3,44 @@
 // Example 1
 
 const diffy = document.querySelector('.container1');
-let lineDescr = ''
+let lineDescr = '';
 
 fetch(
-  "https://gist.githubusercontent.com/JohanSwannie/10ec52c77bd989e512f6474d1686fb36/raw/39c5d068383a546070279c46268fd0702b2de7da/jswan-persons1.json"
-)
+    "https://gist.githubusercontent.com/JohanSwannie/10ec52c77bd989e512f6474d1686fb36/raw/6285a829c6ffa74576f2c6dbe5f949d415cb97a5/jswan-persons1.json"
+  )
   .then(response => response.json())
   .then(users => {
-    console.log(`The JSON File Fetch was Successful`);
-    users.map(user => {
-      const differ = document.createElement('div');
-      lineDescr = `${user.name} is a ${user.username}`;
-      const lineText = document.createTextNode(lineDescr);
-      differ.appendChild(lineText);
-      diffy.appendChild(differ);
-      lineDescr = '';
-    });
+      console.log(`The First JSON File Fetch was successful`);
+      users.map(user => {
+        const differ = document.createElement('div');
+        lineDescr = `${user.name} is a ${user.username} with an email of ${user.email}`;
+        const lineText = document.createTextNode(lineDescr);
+        differ.style.fontSize = '20px';
+        differ.appendChild(lineText);
+        diffy.appendChild(differ);
+        const breaker1 = document.createElement('br');
+        diffy.appendChild(breaker1);
+        const differ2 = document.createElement('div');
+        differ2.setAttribute('class', 'subcontainer');
+        const imager = document.createElement('img');
+        imager.src=user.imageUrl;
+        imager.setAttribute('id', 'imagine');
+        differ2.appendChild(imager);
+        diffy.appendChild(differ2);
+        const breaker2 = document.createElement('br');
+        diffy.appendChild(breaker2);
+        lineDescr = '';
+      });
   })
   .catch(error => console.log(`There was an error while fetching the JSON File`));
 
-// Example 2
-
+// Example 2 - with async await
 
 const diffy2 = document.querySelector('.container2');
 let lineDescr2 = '';
 
 fetchJson()
-  .then(response => console.log(`The JSON File Fetch was successful`))
+  .then(response => console.log(`The Second JSON File Fetch was successful`))
   .catch(error => console.log(`There was an error while fetching the JSON File - ${error}`));
 
 async function fetchJson() {
@@ -37,10 +48,12 @@ async function fetchJson() {
   const output = await response.json();
   output.map(player => {
     const differ2 = document.createElement('div');
-    lineDescr2 = `${player.name} has joined the club on  ${player.joinDate} and has player ${player.matches} matches.`;
+    lineDescr2 = `${player.name} has joined the club on  ${player.joinDate} with price money of ${player.priceMoney} and has played ${player.matches} matches.`;
     const lineText2 = document.createTextNode(lineDescr2);
     differ2.appendChild(lineText2);
     diffy2.appendChild(differ2);
+    const breaker3 = document.createElement('br');
+    diffy2.appendChild(breaker3);
     lineDescr2 = '';
   });
 }
