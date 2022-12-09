@@ -31,5 +31,5 @@ function recursiveFactorial(num) {
 const factorialArray2 = [7, 3];
 
 for (var k = 0; k < factorialArray2.length; k++) {
-  document.write(`<span style="color: #FFF">The Factorial of ${factorialArray2[k]} = ${getFactorial(factorialArray2[k])} </span> </br> </br>`);
+  document.write(`<span style="color: #FFF">The Factorial of ${factorialArray2[k]} = ${recursiveFactorial(factorialArray2[k])} </span> </br> </br>`);
 }
