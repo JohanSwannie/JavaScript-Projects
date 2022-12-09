@@ -2,52 +2,54 @@ function getSiblings(family) {
   if (family.siblings.length === 0) {
     return;
   }
+
+
   family.siblings.forEach(sibling => {
-    document.write(`<span style="color: #FFF">${sibling.fullName}</span> </br> </br>`);
+    document.write(`<p style="color: #FFF; text-align: center">${sibling.fullName}</p></br>`);
     getSiblings(sibling);
   });
 
 }
 
 const family = {
-  fullName: 'Mike Davidson',
+  fullName: 'Pete Lamb',
   siblings: [
     {
-      fullName: 'Luke Mann',
+      fullName: 'Graham Sidaway',
       siblings: [
         {
-          fullName: 'John Bland',
+          fullName: 'Brendan Sheehan',
           siblings: []
         },
         {
-          fullName: 'Mary Brown',
+          fullName: 'Paul Murray',
           siblings: [
             {
-              fullName: 'Tinus Black',
+              fullName: 'Peter Murray',
               siblings: []
             },
             {
-              fullName: 'Dorothy Sheehan',
+              fullName: 'Josh Murray',
               siblings: []
             },
             {
-              fullName: 'Christo Thatcher',
+              fullName: 'Michelle Murray',
               siblings: []
             },
             {
-              fullName: 'Matthew Donnovan',
+              fullName: 'Matthew Murray',
               siblings: []
             },
             {
-              fullName: 'Paul Kotrotsos',
+              fullName: 'Luke Murray',
               siblings: []
             },
             {
-              fullName: 'Neil Sidaway',
+              fullName: 'Julia Murray',
               siblings: []
             },
             {
-              fullName: 'Mark Frost',
+              fullName: 'Mary Murray',
               siblings: []
             }
           ]
