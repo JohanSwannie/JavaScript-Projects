@@ -8,7 +8,22 @@ function iterativeFibonacci(n) {
   return fibonacciArray[n];
 }
 
-document.write(`<p style="color: #FFF; text-align: center">${iterativeFibonacci(9)}</p></br>`);
+document.write(`<p style="color: #FFF; text-align: center">The fibonacci of the number 9 is ${iterativeFibonacci(9)}</p></br>`);
+
+function iterativeFibonacci2(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 1){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+}
+
+document.write(`<p style="color: #FFF; text-align: center">The fibonacci of the number 14 is ${iterativeFibonacci2(14)}</p></br>`);
 
 // Fibonacci Algorithm - Recursive Solution
 
@@ -17,6 +32,9 @@ const theBody = document.getElementById('theBody');
 const h2Another = document.createElement('h2');
 h2Another.textContent = 'Fibonacci Algorithm - Recursion';
 theBody.appendChild(h2Another);
+const h3Another = document.createElement('h3');
+h3Another.textContent = 'Steps of the fibonacci sequence for the numbers 1 to 14';
+theBody.appendChild(h3Another);
 
 function recursiveFibonacci(num) {
   if (num < 2) {
