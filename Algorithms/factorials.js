@@ -37,5 +37,5 @@ h2Another.textContent = 'Factorials Algorithm - Recursion';
 theBody.appendChild(h2Another);
 
 for (var k = 0; k < factorialArray2.length; k++) {
-  document.write(`<p style="color: #FFF; text-align: center">The Factorials of ${factorialArray2[k]} = ${recursiveFactorial(factorialArray2[k])} </p> </br> </br>`);
+  document.write(`<p style="color: #FFF; text-align: center">The Factorial of ${factorialArray2[k]} = ${recursiveFactorial(factorialArray2[k])} </p> </br> </br>`);
 }
