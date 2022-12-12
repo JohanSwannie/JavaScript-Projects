@@ -1,4 +1,4 @@
-// Binary Agents - Return an English translated sentence of the passed binary string.
+// Binary Agents Algorithm - Return an English translated sentence of the passed binary string.
 // The binary string will be space separated.
 
 const binaryAgent = str => {
