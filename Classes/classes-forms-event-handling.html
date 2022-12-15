@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <title>Javascript Classes - Forms and Events handling 1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: darkblue;
+    }
+
+    h2,
+    h3 {
+      text-align: center;
+      color: #FFF;
+      text-decoration: underline
+    }
+
+    .container,
+    .container2 {
+      width: 100vw;
+      margin-bottom: 7em;
+    }
+
+    .container2 {
+      display: none;
+    }
+
+    .instances {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    label {
+      color: #FFF;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    input {
+      width: 15vw;
+      height: 3rem;
+      background: peachpuff;
+    }
+
+    #buttercup {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+    }
+
+    .wrapper1,
+    .wrapper2 {
+      width: 100vw;
+      margin: 0 1.5vw;
+    }
+
+    .displayContainers,
+    .descriptions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .descriptions div {
+      width: 30vw;
+      height: 2rem;
+      line-height: 2;
+      text-align: center;
+      color: #FFF;
+      font-weight: bold;
+      border: .2vw solid #000;
+      background: navy;
+    }
+
+    .displayContainers div {
+      width: 30vw;
+      height: 11rem;
+      line-height: 2;
+      text-align: center;
+      color: #FFF;
+      font-weight: bold;
+      border: 1vw solid #FFF;
+      border-style: ridge;
+      background: rebeccapurple;
+    }
+
+    .wrapper2 {
+      margin-bottom: 2rem;
+    }
+
+    .business {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .controller {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      margin-top: 2rem;
+    }
+
+    input[type=button] {
+      background: navy;
+      color: #FFF;
+      font-weight: bold;
+      border: 8px solid #FFF;
+      border-style: double;
+    }
+
+    #classError {
+      position: absolute;
+      bottom: 2%;
+      left: 30%;
+      transform: ttanslate(-50%, -50%);
+      font-size: 2rem;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Javascript Classes Exercise</h2><br>
+  <h3>Please complete the form to create instances for the class and click SUBMIT</h3><br><br>
+  <div class="container">
+    <div class="instances">
+      <label for="title">Title of Book &nbsp
+        <input type="text" name="title" id="title" value='' autofocus required>
+      </label>
+      <label for="author">Author of Book &nbsp
+        <input type="text" name="author" id="author" value='' required>
+      </label>
+      <label for="isbn">ISBN Number &nbsp
+        <input type="number" name="isbn" id="isbn" value='' required>
+      </label>
+      <label for="copies">Number of Copies &nbsp
+        <input type="number" name="copies" id="copies" value='' required>
+      </label>
+    </div>
+    <input type="button" id="buttercup" onclick="checkFields()" value="Start The Process">
+  </div>
+  <div class="wrapper1">
+    <div class="descriptions">
+      <div>Error Message</div>
+      <div>Books Message</div>
+      <div>Copies of Book</div>
+    </div>
+  </div>
+  <div class="wrapper2">
+    <div class="displayContainers">
+      <div id="errorMessage">No Errors</div>
+      <div id="availableMessage">Unknown</div>
+      <div id="numberOfCopies">0</div>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="business">
+      <label for="sales">Number of Sales &nbsp
+        <input type="number" name="sales" id="sales" value='' required>
+      </label>
+      <label for="stocks">Number of Stock Added &nbsp
+        <input type="number" name="stocks" id="stocks" value='' required>
+      </label>
+      <label for="setter">Set New Stock Number &nbsp
+        <input type="number" name="setter" id="setter" value='' required>
+      </label>
+    </div><br>
+    <div class="controller">
+        <input type="button" id="buttercup2" value="Add Sales">
+        <input type="button" id="buttercup3" value="Add Stock">
+        <input type="button" id="buttercup4" value="Set New Stock">
+        <input type="button" id="buttercup5" onclick="restart()" value="Restart">
+    </div>
+  </div>
+
+  <p id="classError"></p>
+  
+</body>
+
+</html>
