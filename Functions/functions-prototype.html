@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Handling Instances & Objects via Functions with prototype</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 2rem;
+    }
+
+    .container1 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .movie, .descr {
+      letter-spacing: 2px;
+      width: 18vw;
+      height: 50vh;
+      border: 10px solid steelblue;
+      border-style: ridge;
+      background: navy;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .movie {
+    }
+
+    .descr {
+      text-align: center;
+      line-height: 1;
+      height: 8vh;
+      background: darkgreen;
+    }
+
+  </style>
+</head>
+
+<body style="background: lightblue">
+  <h2>Handling Instances & Objects via Functions with prototype</h2>
+  <div class="container1">
+    <div class="descr">Movie1</div>
+    <div class="descr">Movie2</div>
+    <div class="descr">Movie3</div>
+    <div class="descr">Movie4</div>
+    <div class="descr">Movie5</div>
+  </div>
+  <div class="container2">
+    <div class="movie"></div>
+    <div class="movie"></div>
+    <div class="movie"></div>
+    <div class="movie"></div>
+    <div class="movie"></div>
+  </div>
+</body>
+
+</html>
