@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Unbounded:wght@900&display=swap" rel="stylesheet">
+  <title>Use a Timeout function</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 2rem;
+    }
+
+    #clock1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80vw;
+      height: 70vh;
+      border: 12px solid steelblue;
+      border-style: ridge;
+      padding: 2rem;
+      font-family: 'Abel', sans-serif;
+      color: #FFF;
+      font-size: 120px;
+      font-weight: bold;
+      background: crimson;
+      text-align: center;
+      line-height: 3.5;
+      letter-spacing: 14px;
+      word-spacing: 30px;
+    }
+
+    #clock2,
+    #clock3,
+    #clock4,
+    #clock5 {
+      width: 160px;
+      height: 80px;
+      border: 3px solid steelblue;
+      padding: 5px;
+      font-family: 'Abel', sans-serif;
+      color: #FFF;
+      font-size: 20px;
+      font-weight: bold;
+      background: crimson;
+      text-align: center;
+      line-height: 3;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+    }
+
+    #clock2 {
+      position: absolute;
+      top: 128px;
+      left: 168px;
+    }
+
+    #clock3 {
+      position: absolute;
+      top: 128px;
+      left: 1207px;
+    }
+
+    #clock4 {
+      position: absolute;
+      top: 545px;
+      left: 168px;
+    }
+
+    #clock5 {
+      position: absolute;
+      top: 545px;
+      left: 1207px;
+    }
+  </style>
+</head>
+
+<body style="background: lightblue">
+  <h2>Timeout Functions</h2>
+  <div id="clock1"></div>
+  <div id="clock2"></div>
+  <div id="clock3"></div>
+  <div id="clock4"></div>
+  <div id="clock5"></div>
+</body>
+
+</html>
