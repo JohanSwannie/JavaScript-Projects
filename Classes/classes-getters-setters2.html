@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Getters & Setters</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      margin-bottom: 2rem;;
+    }
+
+    .container1 {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      margin-bottom: 3rem;;
+    }
+
+    .personDetails,
+    .person {
+      letter-spacing: 2px;
+      width: 12vw;
+      height: 50vh;
+      border: 10px solid steelblue;
+      border-style: ridge;
+      background: lightgray;
+      color: #000;
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .person {
+      text-align: center;
+      line-height: 1;
+      height: 8vh;
+      background: darkgreen;
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    p {
+      color: navy;
+      font-size:30px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 style="text-decoration: underline; text-align: center">JavaScript Getters & Setters on Classes</h1>
+  <div class="container1">
+    <div class="person">Person1</div>
+    <div class="person">Person2</div>
+    <div class="person">Person3</div>
+    <div class="person">Person4</div>
+    <div class="person">Person5</div>
+    <div class="person">Person6</div>
+    <div class="person">Person7</div>
+    <div class="person">Person8</div>
+  </div>
+  <div class="container2">
+    <div class="personDetails"></div>
+    <div class="personDetails"></div>
+    <div class="personDetails"></div>
+    <div class="personDetails"></div>
+    <div class="personDetails"></div>
+    <div class="personDetails"></div>
+    <div class="personDetails"></div>
+    <div class="personDetails"></div>
+  </div>
+  <p id="lastMessage"></p>
+
+</body>
+</html>
