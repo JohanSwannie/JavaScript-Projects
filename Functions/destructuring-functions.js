@@ -15,14 +15,18 @@ function getStudents(classroom) {
 
 const solution1 = document.querySelector('.solution1');
 
-solution1.innerHTML = `${getStudents({
-    supportTeacher: false,
-    classList: ['Freddy', 'Carl', 'Luke', 'Joe', 'Julie', 'Mary', 'Andrew', 'Brendan', 'Paul', 'Graham', 'Chris']
-  })}`;
+const classRoomObject1 = {
+  supportTeacher: false,
+  classList: ['Freddy', 'Carl', 'Luke', 'Joe', 'Julie', 'Mary', 'Andrew', 'Brendan', 'Paul', 'Graham', 'Chris']
+};
+
+solution1.innerHTML = `${getStudents(classRoomObject1)}`;
+
+const classRoomObject2 = {
+  supportTeacher: false,
+  classList: ['Freddy', 'Carl', 'Luke', 'Joe', 'Julie', 'Mary', 'Andrew', 'Brendan', 'Paul', 'Graham', 'Chris']
+};
 
 const solution2 = document.querySelector('.solution2');
 
-solution2.innerHTML = `${getStudents({
-    supportTeacher: true,
-    classList: ['Freddy', 'Carl', 'Luke', 'Joe', 'Julie', 'Mary', 'Andrew', 'Brendan', 'Paul', 'Graham', 'Chris']
-  })}`;
+solution2.innerHTML = `${getStudents(classRoomObject2)}`;
