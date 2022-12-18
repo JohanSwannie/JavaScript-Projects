@@ -23,7 +23,7 @@ const classRoomObject1 = {
 solution1.innerHTML = `${getStudents(classRoomObject1)}`;
 
 const classRoomObject2 = {
-  supportTeacher: false,
+  supportTeacher: true,
   classList: ['Freddy', 'Carl', 'Luke', 'Joe', 'Julie', 'Mary', 'Andrew', 'Brendan', 'Paul', 'Graham', 'Chris']
 };
 
