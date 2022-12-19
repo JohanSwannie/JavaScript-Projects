@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Generator Functions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: crimson;
+    }
+
+    #carButton {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20vw;
+      height: 5rem;
+      border: 12px solid steelblue;
+      border-style: ridge;
+      color: #FFF;
+      font-size: 25px;
+      font-weight: bold;
+      background: navy;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+
+    .container p {
+      width: auto;
+      height: 5rem;
+      background: #000;
+      color: #FFF;
+      font-weight: bold;
+      border: 9px solid #FFF;
+      border-style: ridge;
+      padding: 1rem;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    #finalMessage {
+      display: none;
+      position: absolute;
+      bottom: 5%;
+      left: 40%;
+      width: 20vw;
+      height: 5rem;
+      border: 12px solid steelblue;
+      border-style: ridge;
+      color: #FFF;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 2;
+      background: navy;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <button id='carButton'>Generate Car</button>
+  <div class="container">
+
+  </div>
+  <p id='finalMessage'></p>
+</body>
+
+</html>
