@@ -25,5 +25,5 @@ function checkPassword() {
     errorMsg.innerHTML = '';
     errorMsg.style.display = 'none';
     password.focus();
-  }, 3000);
+  }, 3500);
 }
