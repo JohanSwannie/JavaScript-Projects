@@ -10,8 +10,8 @@ body {
 
 .differ {
   float: left;
-	width: 5rem;
-	height: 5rem;
+  width: 5rem;
+  height: 5rem;
   line-height: 5;
   border: 2px solid #000;
   text-align: center;
