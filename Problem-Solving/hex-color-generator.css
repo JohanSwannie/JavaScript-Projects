@@ -19,12 +19,34 @@ body {
   margin-bottom: .5rem;
 }
 
-#butty {
+.buttons1 {
+  position: fixed;
+  display: inline-flex;
+  margin-bottom: 10vh;
+  z-index: 99;
+}
+
+.buttons2 {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+#butty1, #butty2, #butty3 {
   display: none;
-  width: 18rem;
+  width: 5rem;
   height: 5rem;
   color: #FFF;
   background-color: crimson;
   font-size: 1rem;
   font-weight: bold;
+}
+
+#butty2 {
+  top: 1%;
+  left: 2%;
+}
+
+#butty3 {
+  top: 1%;
+  left: 20%;
 }
