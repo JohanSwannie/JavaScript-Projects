@@ -16,10 +16,21 @@ function generateHexColor() {
   let diffyText = document.createTextNode(hexColor);
   diffy.appendChild(diffyText);
   wrappy.appendChild(diffy);
-  if (counter === 108) {
+  if (counter === 160) {
     clearInterval(mainInterval);
-    document.getElementById('butty').style.display = 'block';
+    document.getElementById('butty1').style.display = 'block';
+    document.getElementById('butty2').style.display = 'block';
+    document.getElementById('butty3').style.display = 'block';
+    window.scrollBy(0, window.innerHeight);
   }
+}
+
+function scrollWindowUp() {
+  window.scrollBy(0, -window.innerHeight);
+}
+
+function scrollWindowDown() {
+  window.scrollBy(0, window.innerHeight);
 }
 
 const wrappy = document.querySelector('.container');
