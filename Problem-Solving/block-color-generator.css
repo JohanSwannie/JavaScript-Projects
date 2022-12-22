@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightcyan;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 90vw;
+  margin: 1vh 5vw;
+}
+
+.blocks {
+  width: auto;
+  height: 10vh;
+  border: 3px solid #000;
+}
+
+#youWin {
+  position: absolute;
+  bottom: 1%;
+  width: 50vw;
+  font-size: 35px;
+  margin-left: 25vw;
+}
