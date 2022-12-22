@@ -55,7 +55,7 @@ function fillTheBlocks() {
   }
   let hexColor = '';
   hexColor = rgbToHex(red, green, blue);
-  if (hexColor.substring(1, 4) === 'f7a') {
+  if (hexColor.substring(0, 5) === '#face') {
     document.getElementById('youWin').innerHTML = `You have hit the Jackpot after ${counter} color variations`;
     clearInterval(mainInterval);
   }
