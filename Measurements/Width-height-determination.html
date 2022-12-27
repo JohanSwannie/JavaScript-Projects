@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Width & Height Determinations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      background: steelblue;
+      color: #FFF;
+    }
+
+    h2 {
+      margin-left: 10rem;
+      ;
+    }
+
+    #textAreaTag {
+      border: 5px solid black;
+      padding: 1.5rem;
+      background: navy;
+      color: #FFF;
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .display {
+      background: steelblue;
+      color: #FFF;
+    }
+
+    p {
+      display: table;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body id='body'>
+  <div class="container">
+    <textarea id='textAreaTag' rows="8" cols="20" style="text-align: center">
+Text Area Display
+
+Drag me to make
+
+ME BIGGER
+
+OR SMALLER
+    </textarea>
+    <h2>Resize The Window to see Window Width & Height Changes</h2>
+  </div>
+  <div class="display">
+    <p id="WDisplay"></p>
+    <p id="HDisplay"></p>
+    <p id="BWDisplay"></p>
+    <p id="BHDisplay"></p>
+    <p id="WWDisplay"></p>
+    <p id="WHDisplay"></p>
+  </div>
+</body>
+<script src='width-height-determination.js'></script>
+
+</html>
