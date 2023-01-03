@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Weather Application</title>
+  </head>
+  <body class="obscure">
+    <h2>Sydney Australia - Weather Forecast</h2><hr>
+    <h3>Current Weather</h3>
+    <header class="headline">
+      <div class="headline-current-weather">
+        <img class="weather-symbol large" src="symbols/sun.svg" statistics-current-symbol />
+        <div class="headline-current-temperature">
+          <span statistics-current-temperature>31</span>&deg; C
+        </div>
+        <div class="statistics-component">
+          <div class="marker">High</div>
+          <div><span statistics-current-high>32</span>&deg; C</div>
+        </div>
+        <div class="statistics-component">
+          <div class="marker">Feels Like High</div>
+          <div><span statistics-current-feels-like-high>27</span>&deg; C</div>
+        </div>
+        <div class="statistics-component">
+          <div class="marker">Wind</div>
+          <div>
+            <span statistics-current-wind>9</span
+            ><span class="val-more-detail">kph</span>
+          </div>
+        </div>
+        <div class="statistics-component">
+          <div class="marker">Low</div>
+          <div><span statistics-current-low>19</span>&deg; C</div>
+        </div>
+        <div class="statistics-component">
+          <div class="marker">Feels Like Low</div>
+          <div><span statistics-current-feels-like-low>12</span>&deg; C</div>
+        </div>
+        <div class="statistics-component">
+          <div class="marker">Precipitation</div>
+          <div>
+            <span statistics-current-precipitation>0.1</span
+            ><span class="val-more-detail">mm</span>
+          </div>
+        </div>
+      </div>
+    </header><hr>
+
+    <h3>Daily Weather</h3>
+    <section class="day-of-week-component" statistics-day-of-week-component>
+      <div class="daily-container">
+        <img src="symbols/cloud.svg" class="weather-symbol" />
+        <div class="daily-container-day-of-week">Monday</div>
+        <div>32&deg; C</div>
+      </div>
+      <div class="daily-container">
+        <img src="symbols/cloud.svg" class="weather-symbol" />
+        <div class="daily-container-day-of-week">Tuesday</div>
+        <div>32&deg; C</div>
+      </div>
+      <div class="daily-container">
+        <img src="symbols/cloud.svg" class="weather-symbol" />
+        <div class="daily-container-day-of-week">Wednesday</div>
+        <div>32&deg; C</div>
+      </div>
+      <div class="daily-container">
+        <img src="symbols/cloud.svg" class="weather-symbol" />
+        <div class="daily-container-day-of-week">Thursday</div>
+        <div>32&deg; C</div>
+      </div>
+      <div class="daily-container">
+        <img src="symbols/cloud.svg" class="weather-symbol" />
+        <div class="daily-container-day-of-week">Friday</div>
+        <div>32&deg; C</div>
+      </div>
+      <div class="daily-container">
+        <img src="symbols/cloud.svg" class="weather-symbol" />
+        <div class="daily-container-day-of-week">Saturday</div>
+        <div>32&deg; C</div>
+      </div>
+      <div class="daily-container">
+        <img src="symbols/cloud.svg" class="weather-symbol" />
+        <div class="daily-container-day-of-week">Sunday</div>
+        <div>32&deg; C</div>
+      </div>
+    </section><hr>
+
+    <table class="hourly-component">
+      <h3>Hourly Weather</h3>
+      <tbody statistics-hour-component>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>4 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>5 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>6 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>7 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>8 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>9 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>10 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>11 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-procession">
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Thursday</div>
+              <div>12 AM</div>
+            </div>
+          </td>
+          <td>
+            <img src="symbols/cloud.svg" class="weather-symbol" />
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Temp</div>
+              <div>31&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Feels Like Temp</div>
+              <div>25&deg; C</div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Wind</div>
+              <div>26<span class="val-more-detail">kph</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="statistics-component">
+              <div class="marker">Precipitation</div>
+              <div>0<span class="val-more-detail">in</span></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <template id="daily-board-figure">
+      <div class="daily-container">
+        <img statistics-symbol class="weather-symbol" />
+        <div class="daily-container-day-of-week" statistics-day-of-week></div>
+        <div><span statistics-temperature></span><span>&deg; C</span></div>
+      </div>
+    </template>
+
+    <template id="hourly-row-figure">
+      <tr class="hourly-procession">
+        <td>
+          <div class="statistics-component">
+            <div class="marker" statistics-day></div>
+            <div statistics-time></div>
+          </div>
+        </td>
+        <td>
+          <img statistics-symbol class="weather-symbol" />
+        </td>
+        <td>
+          <div class="statistics-component">
+            <div class="marker">Temp</div>
+            <div><span statistics-temperature></span><span>&deg; C</span></div>
+          </div>
+        </td>
+        <td>
+          <div class="statistics-component">
+            <div class="marker">Feels Like Temp</div>
+            <div><span statistics-feels-like-temperature></span><span>&deg; C</span></div>
+          </div>
+        </td>
+        <td>
+          <div class="statistics-component">
+            <div class="marker">Wind</div>
+            <div>
+              <span statistics-wind></span><span class="val-more-detail">kph</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="statistics-component">
+            <div class="marker">Precipitation</div>
+            <div>
+              <span statistics-precip></span><span class="val-more-detail">mm</span>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </template>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
