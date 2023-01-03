@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(200, 100%, 85%);
+  color: hsl(200, 100%, 10%);
+  font-family: sans-serif;
+}
+
+.obscure {
+  filter: blur(5px);
+  overflow: hidden;
+}
+
+.headline {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+hr {
+  height: 1.7px;
+  background-color: lightseagreen;
+  border: none;
+}
+
+.headline-current-weather {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.weather-symbol {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.weather-symbol.large {
+  width: 80px;
+  height: 80px;
+}
+
+.headline-current-temperature {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.statistics-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  border: 3px solid hsl(200, 99%, 27%);
+  padding: .25rem;
+}
+
+.marker {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.6rem;
+  color: hsl(200, 100%, 20%);
+}
+
+.val-more-detail {
+  font-weight: lighter;
+  font-size: 0.75rem;
+}
+
+.day-of-week-component {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  gap: 2.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.daily-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 7px solid hsl(200, 100%, 10%);
+  border-radius: 0.25rem;
+  border-style: double;
+  padding: 0.25rem;
+}
+
+.daily-container-day-of-week {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: hsl(200, 100%, 20%);
+  margin-top: 0.5rem;
+}
+
+.hourly-component {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.hourly-procession {
+  background-color: hsl(200, 60%, 75%);
+}
+
+.hourly-procession:nth-child(2n) {
+  background-color: hsl(200, 60%, 70%);
+}
+
+.hourly-procession > td {
+  padding: 0.25rem 0.5rem;
+}
