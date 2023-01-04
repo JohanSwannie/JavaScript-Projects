@@ -52,12 +52,12 @@ function supplyTheCurrentWeather(current) {
 
 const dayOfWeek_Configuration = new Intl.DateTimeFormat(undefined, { weekday: "long" });
 const dailySection = document.querySelector("[statistics-day-of-week-component]");
-const dayCardTemplate = document.getElementById("daily-board-figure");
+const dayOfWeekBoardFigure = document.getElementById("daily-board-figure");
 
 function renderDailyWeather(daily) {
   dailySection.innerHTML = "";
   daily.forEach(day => {
-    const element = dayCardTemplate.content.cloneNode(true);
+    const element = dayOfWeekBoardFigure.content.cloneNode(true);
     setValue("temperature", day.maxTemp, { parent: element });
     setValue("day-of-week", dayOfWeek_Configuration.format(day.timestamp), { parent: element });
     element.querySelector("[statistics-symbol]").src = getIconUrl(day.iconCode);
