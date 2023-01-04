@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Geolocation - getCurrentPosition</title>
+  <style>
+
+    body {
+      background: hsl(170, 100%, 75%);
+    }
+
+    button {
+      background: crimson;
+      color: #FFF;
+      font-size: 20px;
+      font-weight: bold;
+      padding: .5rem;
+      width: 16vw;
+      margin-left: 42vw;
+    }
+
+    .displayMessages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, auto);
+      gap: 2.5rem;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    p {
+      width: auto;
+      padding: 1rem;
+      border: 1px solid #000;
+      background: lightsteelblue;
+    }
+
+    #latitude, #longitude, #errorMsg {
+      display: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <button onclick="getYourLocation();">Get Your Location</button>
+  <div class="displayMessages">
+    <p id='latitude'></p>
+    <p id='longitude'></p>
+    <p id='errorMsg'></p>
+  </div>
+  <script src="geolocation-getcurrentposition.js"></script>
+</body>
+
+</html>
