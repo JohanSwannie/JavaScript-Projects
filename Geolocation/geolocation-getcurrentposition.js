@@ -12,19 +12,21 @@ function displayYourLocation(position) {
 }
 
 function locationFailed(err) {
-  if (err.code == 1) {
+  if (err.code === 1) {
     errMsg.style.display = 'block';
     errMsg.innerHTML = "Access to this feature is denied!";
-  } else if (err.code == 2) {
+  } else if (err.code === 2) {
     errMsg.style.display = 'block';
     errMsg.innerHTML = "Sorry, your position is currently unavailable!";
+  } else if (err.code === 3) {
+    errMsg.innerHTML = "Geolocation information was not obtained in the allowed time.";
   }
 }
 
 function getYourLocation() {
   if (navigator.geolocation) {
     let extra = {
-      timeout: 60000
+      timeout: 30000
     };
     navigator.geolocation.getCurrentPosition(displayYourLocation, locationFailed, extra);
   } else {
