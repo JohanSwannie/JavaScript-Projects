@@ -1,11 +1,11 @@
-function linearSearch(array, value) {
-  for (var i = 0; i < array.length; i++) {
-    if (value === array[i]) {
+function linearSearch(linny, value) {
+  for (var i = 0; i < linny.length; i++) {
+    if (value === linny[i]) {
       return `value of ${value} is found in index ${i}`;
     }
   }
 }
 
-let array1 = ['yes', true, 17.33, 'Phillip', 73, false, 'Georgetown', 'Sydney'];
+let linearSearchArray = ['yes', true, 17.33, 'Phillip', 73, false, 'Georgetown', 'Sydney'];
 
-document.write(`<p style="color: #FFF; font-size: 28px; text-align: center">${linearSearch(array1, 17.33)}</p>`);
+document.write(`<p style="color: #FFF; font-size: 28px; text-align: center">${linearSearch(linearSearchArray, 17.33)}</p>`);
