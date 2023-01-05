@@ -1,9 +1,9 @@
 
     let array1 = ['Jason', 'Freddy', 'John', 'Mike'];
 
-    let formatter1 = new Intl.ListFormat("en-nz");
+    let formatter1 = new Intl.ListFormat("en-au");
 
-    let formatter2 = new Intl.ListFormat("en-nz", {
+    let formatter2 = new Intl.ListFormat("en-au", {
       type: "disjunction",
     });
 
@@ -11,11 +11,11 @@
       style: "short",
     });
 
-    let formatter4 = new Intl.ListFormat("en", {
+    let formatter4 = new Intl.ListFormat("en-au", {
       style: "narrow",
     });
 
-    let formatter5 = new Intl.ListFormat("en", {
+    let formatter5 = new Intl.ListFormat("en-au", {
       style: "narrow", type: "unit",
     });
 
