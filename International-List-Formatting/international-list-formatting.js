@@ -1,7 +1,7 @@
 
     let array1 = ['Jason', 'Freddy', 'John', 'Mike'];
 
-    let formatter1 = new Intl.ListFormat("en-nz")
+    let formatter1 = new Intl.ListFormat("en-nz");
 
     let formatter2 = new Intl.ListFormat("en-nz", {
       type: "disjunction",
