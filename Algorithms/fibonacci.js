@@ -25,7 +25,7 @@ function iterativeFibonacci2(num){
 
 document.write(`<p style="color: #FFF; text-align: center">The fibonacci of the number 14 is ${iterativeFibonacci2(14)}</p></br>`);
 
-// Fibonacci Algorithm - Recursive Solution
+// Fibonacci Algorithm - Recursive Solution 
 
 const theBody = document.getElementById('theBody');
 
