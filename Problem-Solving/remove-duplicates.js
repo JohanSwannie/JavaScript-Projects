@@ -52,3 +52,27 @@ for (var i = 0; i < example4Array.length; i++) {
 }
 
 document.write(`<p>Example 4 Result  ---  ${example4Array2}</p>`);
+
+// Example 5
+
+let example5Array = ['Matthew', 19, 8, 15, 22, 'Mary', 7, 8, 10, 14, 3, 'Matthew', 22, 7, 'Jason', 18];
+
+let alphaArray = example5Array.filter(item => typeof(item) === 'string').sort();
+
+let numberArray = example5Array.filter(item => typeof(item) === 'number').sort((a, b) => a - b);
+
+let completeArray = alphaArray.concat(numberArray);
+
+let example5Array2 = [];
+
+let compareValue;
+
+for (var i = 0; i < completeArray.length; i++) {
+   if (completeArray[i] !== compareValue) {
+     example5Array2.push(completeArray[i]);
+     compareValue = completeArray[i];
+   }
+}
+
+document.write(`<p>Example 5 Result  ---  ${example5Array2}</p>`);
+
