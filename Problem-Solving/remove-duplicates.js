@@ -1,11 +1,5 @@
 // 4 ways to remove duplicates from an array
 
-const bigBoss = document.querySelector('.container');
-
-let h1Heading = document.createElement('h1');
-h1Heading.textContent = "4 Ways to remove duplicates from arrays";
-bigBoss.appendChild(h1Heading);
-
 // Example1
 
 let example1Array = [17, 8, 12, 17, 19, 22, 7, 8, 10, 17, 19];
