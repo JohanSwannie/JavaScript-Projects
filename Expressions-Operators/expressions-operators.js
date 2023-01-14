@@ -41,11 +41,13 @@ console.log(firstObj); // Result --> {i:27, j:58}
 
 // Destructuring
 
-let values = [1, 2, 3];
-let [variable1, variable2, variable3] = values;
+let values = [1, 2, 3, 10, true, 'Hallo ', 'Everyone'];
+let [variable1, variable2, variable3, variable4, variable5, variable6, variable7] = values;
 console.log(variable3);
-let variable4 = variable2 * variable3 + variable1;
-console.log(variable4);
+let calcResult = variable2 * variable3 + variable1;
+console.log(calcResult);
+let stringResult = variable6 + variable7;
+console.log(stringResult);
 
 // Comparison Operators
 
